@@ -1,0 +1,3 @@
+#!/bin/bash
+#boots Ubuntu Linux netboot and gets thy to the installer.  
+pixiecore -kernel=linux -initrd=initrd.gz -cmdline="vga=788 initrd=initrd.gz -- quiet"
