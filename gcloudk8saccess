@@ -1,0 +1,17 @@
+Scenario:
+
+You have a cluster on google, now you need to connect to it and access the API.   You don't have
+Kubernetes master is running at https://104.197.189.195
+KubeDNS is running at https://104.197.189.195/api/v1/proxy/namespaces/kube-system/services/kube-dns
+KubeUI is running at https://104.197.189.195/api/v1/proxy/namespaces/kube-system/services/kube-ui
+Heapster is running at https://104.197.189.195/api/v1/proxy/namespaces/kube-system/services/monitoring-heapster
+
+Password for these URLs is: eW7GXy7IPl5zp2fz
+
+
+
+Fabric8 Deploy:
+export KUBERNETES_MASTER=https://104.197.189.195
+export FABRIC8_PROFILES=kubernetes
+kc get pods
+kc create -f http://central.maven.org/maven2/io/fabric8/apps/console-kubernetes/2.2.19/console-kubernetes-2.2.19-kubernetes.json
